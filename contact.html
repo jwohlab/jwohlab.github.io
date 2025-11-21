@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NBOE LAB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background-color: #e0e0e0;
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+        }
+
+        .recruit-box {
+            background-color: var(--secondary-color);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                NBOE <span>LAB</span>
+            </a>
+            <div class="mobile-menu-btn">☰</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="people.html" class="nav-link">People</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+
+            <div class="contact-grid">
+                <div>
+                    <h2>Location</h2>
+                    <p style="margin-bottom: var(--spacing-sm);">
+                        <strong>OFFICE:</strong> #108, College of Natural Science (자연과학대학 108호)<br>
+                        <strong>LAB:</strong> #416, College of Natural Science (자연과학대학 416호)<br>
+                        <strong>TEL:</strong> +82-31-330-4923<br>
+                        <strong>EMAIL:</strong> jeongwoh@hufs.ac.kr
+                    </p>
+                    <p>
+                        Department of Chemistry,<br>
+                        Hankuk University of Foreign Studies (HUFS),<br>
+                        Global Campus, Yongin, South Korea
+                    </p>
+                </div>
+                <div class="map-container">
+                    <!-- Placeholder for Google Maps Embed -->
+                    <p>Map Placeholder (Embed Google Maps here)</p>
+                </div>
+            </div>
+
+            <div class="recruit-box">
+                <h2>Join Our Lab</h2>
+                <p style="margin-bottom: 1rem;">Positions for postdoctoral associates, M.S. & Ph.D. students, and
+                    undergraduate students internships are currently available in all research areas.</p>
+                <p style="margin-bottom: 1rem;">We are looking for motivated individuals interested in Nanochemistry,
+                    Biosensors, Electrochemistry, and Analytical Chemistry. We welcome graduate applicants as well as
+                    undergraduate students.</p>
+                <p>If you are interested, please contact Prof. Jeong-Wook Oh via email.</p>
+                <a href="mailto:jeongwoh@hufs.ac.kr" class="btn btn-primary" style="margin-top: 1rem;">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>NBOE LAB</h4>
+                    <p>Nano-Bio-Opto-Electronic Laboratory</p>
+                    <p>Department of Chemistry</p>
+                    <p>Hankuk University of Foreign Studies</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Office:</strong> #108, College of Natural Science</p>
+                    <p><strong>Lab:</strong> #416, College of Natural Science</p>
+                    <p><strong>Email:</strong> jeongwoh@hufs.ac.kr</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="research.html">Research</a></p>
+                    <p><a href="people.html">People</a></p>
+                    <p><a href="publications.html">Publications</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NBOE LAB. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
